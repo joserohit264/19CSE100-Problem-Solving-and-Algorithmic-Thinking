@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:43:37 AM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMC0yODsxMDozOToyNCBBTTsyNjQ0"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMC0yODsxMDozOToyOCBBTTsxO1VTRVI7REVTS1RPUC1WTTRIVDgyOzIwMjItMTAtMjg7MDk6MjY6MTEgQU07YmlvX2RhdGEuZnByZzs2ODE0"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMC0yODsxMDo0MzozNyBBTTsxOzI3NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rollno" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your roll no : &quot;" newline="True"/>
+            <input variable="rollno"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your name : &quot;" newline="True"/>
+            <input variable="name"/>
+            <declare name="address" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your address : &quot;" newline="True"/>
+            <input variable="address"/>
+            <declare name="bloodgroup" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your bloodgroup : &quot;" newline="True"/>
+            <input variable="bloodgroup"/>
+            <declare name="phnumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your phone number : &quot;" newline="True"/>
+            <input variable="phnumber"/>
+            <declare name="deptassigned" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your department assigned&quot;" newline="True"/>
+            <input variable="deptassigned"/>
+        </body>
+    </function>
+</flowgorithm>
