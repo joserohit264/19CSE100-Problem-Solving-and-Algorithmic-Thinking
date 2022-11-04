@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:50:19 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzA5OjA3OjMyIEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzEwOjUwOjE5IEFNOzU7MzE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Aim to find temperature in fahrenheit"/>
+            <declare name="celsius" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the temperature in celcius : &quot;" newline="True"/>
+            <comment text="Temperature entered in celsius"/>
+            <input variable="celsius"/>
+            <declare name="Fahrenheit" type="Integer" array="False" size=""/>
+            <comment text="Calculating Fahrenheit"/>
+            <assign variable="Fahrenheit" expression="(9/5*celsius) + 32"/>
+            <output expression="&quot;Fahrenheit =&quot;&amp;fahrenheit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

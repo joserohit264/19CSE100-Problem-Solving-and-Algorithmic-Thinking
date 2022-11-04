@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:46:53 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzEwOjI5OjM2IEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzEwOjQ2OjUzIEFNOzQ7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Aim to find remainder ; without using the modulo operator"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <comment text="dividend"/>
+            <output expression="&quot;Enter the value of a : &quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <comment text="divisor"/>
+            <output expression="&quot;Enter the value of b :&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="division of a and b ; stored in variable c"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <comment text="remainder"/>
+            <assign variable="d" expression="a-(b*c)"/>
+            <output expression="&quot;The remainder = &quot;&amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

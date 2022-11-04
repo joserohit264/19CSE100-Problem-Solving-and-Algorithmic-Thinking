@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:49:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzA5OjI2OjI4IEFNOzMwNjU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzEwOjQ5OjA2IEFNOzU7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Aim to find the Quadratic equation  &#13;&#10;"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the coefficient of x*x :&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the coefficient of x : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the value of constant : &quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="root1" type="Integer" array="False" size=""/>
+            <declare name="root2" type="Integer" array="False" size=""/>
+            <assign variable="root1" expression="((-b)+(sqrt((b*b)-4*a*c)))/2*a"/>
+            <assign variable="root2" expression="((-b)-(sqrt((b*b)-4*a*c)))/2*a"/>
+            <output expression="root1" newline="True"/>
+            <output expression="root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

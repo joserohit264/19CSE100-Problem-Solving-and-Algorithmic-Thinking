@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:50:39 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzEwOjAzOjQ2IEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzMDsyMDIyMjNNQVlDMDA2NzsyMDIyLTExLTA0OzEwOjUwOjM5IEFNOzc7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Swapping two numbers ; without using a 3rd variable"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <comment text="1st number"/>
+            <output expression="&quot;Enter the value for a : &quot;" newline="True"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <comment text="2nd number"/>
+            <output expression="&quot;Enter the value for b : &quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="Operations"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <output expression="&quot;Value of b = &quot;&amp;b" newline="True"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;Value of a =&quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
