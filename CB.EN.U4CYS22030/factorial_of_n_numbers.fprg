@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:52:23 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIyLTEyLTAyOzA5OjE1OjA4IEFNOzMzMTM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIyLTEyLTAyOzA5OjUyOjIzIEFNOzQ7MzQyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="FACTORIAL OF N NUMBERS"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of n : &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="factorial" expression="1"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*i"/>
+            </for>
+            <output expression="&quot;The factorial of &quot;&amp;n&amp;&quot; is = &quot;&amp;factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

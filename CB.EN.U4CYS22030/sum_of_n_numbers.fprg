@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:51:34 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIyLTEyLTAyOzA5OjA5OjQ2IEFNOzMzMTg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIyLTEyLTAyOzA5OjUxOjM0IEFNOzQ7MzQyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="SUM OF FIRST N NUMBERS"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of n : &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="sum" expression="sum+i"/>
+            </for>
+            <output expression="&quot;The sum of first &quot;&amp;n&amp;&quot; numbers = &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
