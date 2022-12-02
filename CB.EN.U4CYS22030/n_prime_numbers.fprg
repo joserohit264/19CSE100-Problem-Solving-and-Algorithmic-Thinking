@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 11:26:37 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wMjsxMDo0MzozMCBQTTsyNjQ1"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wMjsxMToyNjozNyBQTTsyOzI3NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="TO FIND 'n' PRIME NUMBERS&#13;&#10;"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of n : &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;=4">
+                <then>
+                    <output expression="2" newline="True"/>
+                    <output expression="3" newline="True"/>
+                    <for variable="i" start="4" end="n" direction="inc" step="1">
+                        <if expression="i%1==0">
+                            <then>
+                                <if expression="i%i==0">
+                                    <then>
+                                        <if expression="i%2!=0">
+                                            <then>
+                                                <if expression="i%3!=0">
+                                                    <then>
+                                                        <output expression="i" newline="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <if expression="n&lt;4 and n&gt;2">
+                        <then>
+                            <output expression="2" newline="True"/>
+                            <output expression="3" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="n&gt;1 and n&lt;3">
+                                <then>
+                                    <output expression="2" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;NONE&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
