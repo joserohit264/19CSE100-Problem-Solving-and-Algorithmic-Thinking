@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:46:40 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIyLTEyLTAyOzA5OjU5OjI0IEFNOzMzMTk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIyLTEyLTAyOzEwOjQ2OjQwIEFNOzc7MzQxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="FIBONACCI SERIES"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <declare name="flag" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <comment text="ASSUME i AS ZERO, SINCE IT'S THE FIRST NUMBER"/>
+            <assign variable="i" expression="0"/>
+            <comment text="ASSUME j as 1,SINCE IT'S THE SECOND NUMBER"/>
+            <assign variable="j" expression="1"/>
+            <output expression="&quot;Enter the value of n : &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="i" newline="True"/>
+            <output expression="j" newline="True"/>
+            <for variable="flag" start="0" end="n-3" direction="inc" step="1">
+                <assign variable="k" expression="i+j"/>
+                <output expression="k" newline="True"/>
+                <assign variable="i" expression="j"/>
+                <assign variable="j" expression="k"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
