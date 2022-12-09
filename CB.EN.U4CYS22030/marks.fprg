@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 04:47:35 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wOTswNDo0NjoyNiBQTTsyNjYz"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wOTswNDo0NzowOSBQTTsyO2RlZXBhaztERUVQQUtLVU1BUjsyMDIyLTEyLTA5OzEwOjMwOjM1IEFNO1N0dWRlbnRzTWFya1JlY29yZF85MTEyMDIyLmZwcmc7ODM2NA=="/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wOTswNDo0NzozNSBQTTsxOzI3NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, total, T" type="Integer" array="False" size=""/>
+            <declare name="avg, A" type="Real" array="False" size=""/>
+            <declare name="mark" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number of students in the class.&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="marks" type="Integer" array="True" size="n"/>
+            <declare name="subjects" type="Integer" array="True" size="5"/>
+            <declare name="rollno" type="Integer" array="True" size="n"/>
+            <assign variable="i" expression="0"/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <assign variable="T" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="total" expression="0"/>
+                <declare name="Rno" type="Integer" array="False" size=""/>
+                <output expression="&quot;enter the roll no of student&quot;&amp;i+1" newline="True"/>
+                <input variable="Rno"/>
+                <output expression="&quot;enter the marks of roll number &quot;&amp;Rno&amp;&quot; in the subjects:&quot;" newline="True"/>
+                <output expression="&quot;maths&quot;" newline="True"/>
+                <input variable="subjects[0]"/>
+                <output expression="&quot;physics&quot;" newline="True"/>
+                <input variable="subjects[1]"/>
+                <output expression="&quot;chemistry&quot;" newline="True"/>
+                <input variable="subjects[2]"/>
+                <output expression="&quot;PSAT&quot;" newline="True"/>
+                <input variable="subjects[3]"/>
+                <output expression="&quot;english&quot;" newline="True"/>
+                <input variable="subjects[4]"/>
+                <for variable="k" start="0" end="4" direction="inc" step="1">
+                    <assign variable="total" expression="total+subjects[k]"/>
+                </for>
+                <assign variable="marks[i]" expression="total"/>
+                <assign variable="rollno[i]" expression="Rno"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;the total marks of roll number &quot;&amp;rollno[i]&amp; &quot; is: &quot;&amp;marks[i]" newline="True"/>
+                <output expression="&quot;the average marks of roll number &quot;&amp;rollno[i]&amp; &quot; is: &quot;&amp;marks[i]/n" newline="True"/>
+                <assign variable="T" expression="marks[i]+T"/>
+            </for>
+            <assign variable="A" expression="T/n"/>
+            <output expression="&quot;the total marks of the class is : &quot;&amp;T" newline="True"/>
+            <output expression="&quot;the average marks of the class is : &quot;&amp;A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

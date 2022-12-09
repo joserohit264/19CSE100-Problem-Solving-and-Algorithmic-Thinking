@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 04:45:03 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wOTswNDo0Mzo0NCBQTTsyNjYw"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wOTswNDo0Mzo0NyBQTTsxO2RlZXBhaztERUVQQUtLVU1BUjsyMDIyLTEyLTA4OzExOjUxOjQ5IFBNO0FycmF5LmZwcmc7NjU4Nw=="/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLVZNNEhUODI7MjAyMi0xMi0wOTswNDo0NTowMyBQTTsxOzI3NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Real" array="True" size="10"/>
+            <declare name="y, z" type="Integer" array="False" size=""/>
+            <for variable="y" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter the number in index &quot;&amp;y&amp;&quot; :&quot;" newline="True"/>
+                <input variable="z"/>
+                <assign variable="x[y]" expression="z"/>
+            </for>
+            <for variable="y" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;The element in index &quot;&amp;y&amp;&quot; is &quot;&amp;x[y]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
