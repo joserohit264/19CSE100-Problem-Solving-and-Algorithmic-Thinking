@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22030"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 11:05:35 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIzLTAxLTIwOzEwOjEyOjU2IEFNOzMzMDQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAzMDsyMDIyMjNNQVlDMDA2NDsyMDIzLTAxLTIwOzExOjA1OjM1IEFNOzQ7MzQxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="SELECTION SORT"/>
+            <declare name="i, j, a, b" type="Integer" array="False" size=""/>
+            <declare name="e" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Enter the number : &quot;&amp;i+1" newline="True"/>
+                <input variable="e[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <for variable="j" start="0" end="4" direction="inc" step="1">
+                    <assign variable="a" expression="e[i]"/>
+                    <assign variable="b" expression="e[j]"/>
+                    <if expression="e[j]&gt;e[i]">
+                        <then>
+                            <assign variable="e[i]" expression="b"/>
+                            <assign variable="e[j]" expression="a"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;SORTED ARRAY&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="e[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
